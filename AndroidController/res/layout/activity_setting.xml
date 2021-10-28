@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key=""
+        android:title="" >
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_frame_settings"
+        android:title="Frame" >
+
+        <ListPreference
+            android:id="@+id/lp_setting_val_fps"
+            android:defaultValue="Auto//n"
+            android:dialogTitle="FPS (frame per second)"
+            android:entries="@array/string_array_name"
+            android:entryValues="@array/string_array_name"
+            android:key="pref_set_fps"
+            android:summary="초당 전송 될 프레임 수를 설정합니다."
+            android:title="@string/set_fps" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:key="pref_key_quality_settings"
+        android:title="Quality" >
+        <ListPreference
+            android:id="@+id/lp_setting_val_quality"
+            android:defaultValue="@string/low_definition"
+            android:dialogTitle="View quality"
+            android:entries="@array/string_quality"
+            android:entryValues="@array/string_quality"
+            android:key="pref_set_quality"
+            android:summary="@string/set_quality_summary"
+            android:title="@string/set_quality" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

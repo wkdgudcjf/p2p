@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ssm.androidcontroller.MainActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_main_bridge" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ivTestBg"
+        android:background="@drawable/bg_transparent_black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bg_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="80dp" >
+
+            <TextView
+                android:id="@+id/tv_main_title"
+                style="@style/FontWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="55dp"
+                android:gravity="center"
+                android:shadowColor="@color/whitegrey02"
+                android:text="@string/main_title"
+                android:textSize="33sp" />
+
+            <TextView
+                android:id="@+id/tv_conn_title"
+                style="@style/FontWhiteGrey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/auth_code"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_conn_code"
+                style="@style/FontWhite"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:text="Connection Code"
+                android:textColor="#F0F0F0"
+                android:textSize="20sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center" 
+                android:background="@drawable/bg_transparent_white01"
+                />
+
+            <Button
+                android:id="@+id/btn_connect"
+                style="@style/FontWhite"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/whitegrey05"
+                android:text="@string/btn_connect" />
+
+            <Button
+                android:id="@+id/btn_create_server"
+                style="@style/FontWhite"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@color/whitegrey05"
+                android:text="@string/btn_create_server" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="string_quality">
+        <item>Low definition</item>
+        <item>Medium definition</item>
+        <item>High definition</item>
+    </string-array>
+</resources>
